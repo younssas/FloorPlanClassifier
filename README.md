@@ -56,21 +56,6 @@ pip install seaborn>=0.12.0
    ```
 4. Run the application: `streamlit run app_standalone.py`
 
-## File Structure
-
-```
-architectural-classifier/
-├── app_standalone.py                 # Main Streamlit application
-├── data_loader_standalone.py         # PDF and JSON processing
-├── google_drive_integration.py       # Cloud storage integration
-├── performance_metrics_standalone.py # Analytics and reporting
-├── classifiers/
-│   ├── spatial_fusion_classifier_standalone.py    # Rule-based classifier
-│   ├── deep_learning_standalone.py                # CNN classifier
-│   └── llm_based_standalone.py                   # OpenAI GPT classifier
-├── README.md                         # This documentation
-└── requirements.txt                  # Python dependencies (create manually)
-```
 
 ## Usage Guide
 
@@ -238,25 +223,3 @@ accuracy_optimized = {
     'consensus_threshold': 0.6
 }
 ```
-
-## Contributing
-
-### Adding New Classifiers
-1. Implement classifier interface in `classifiers/` directory
-2. Add classification method to main application
-3. Update performance metrics integration
-4. Include documentation and examples
-
-### Improving Existing Methods
-1. Enhance rule sets in Spatial Fusion classifier
-2. Retrain CNN with additional architectural data
-3. Optimize LLM prompts for better accuracy
-4. Add new element types and classifications
-
-## License and Usage
-
-This software is designed for architectural analysis and construction estimating. Please ensure compliance with applicable licensing terms for all dependencies, including OpenAI API usage terms and Google Drive API policies.
-
-## Support
-
-For technical issues, feature requests, or implementation guidance, refer to the inline documentation and method docstrings throughout the codebase. The application includes comprehensive error handling and user feedback for most common scenarios.
